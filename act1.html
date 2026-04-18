@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>soring in allay</h1>
+    <button onclick="asc()">Ascending order</button>
+    <button onclick="dec()">Descending order</button>
+    <p id="result"></p>
+    <p id="result1"></p>
+    <p id="result2"></p>
+    <p id="color"></p>
+    <p id="color2"></p>
+
+    <script>
+        var colors = [ "red", "orange", "blue", "white", "sky", "yellow", "black", "pink"]
+       document.getElementById("color").innerHTML = colors.sort();
+        document.getElementById("color2").innerHTML = colors.reverse();
+       
+        var number = [2, 3, 55, 57, 99, 67, 56, 78, 68, 99];
+         document.getElementById("result").innerHTML = number;
+
+         document.getElementById("result1").innerHTML = numbers.sort();
+
+         function asc(){
+            number.sort(function(a,b){
+                return a-b;
+            });
+            document.getElementById("result").innerHTML = number;
+         }
+
+          function dec() {
+                number.sort(function (a, b) {
+                    return b - a;
+                });
+                document.getElementById("result").innerHTML = number;
+            }
+         
+
+    </script>
+</body>
+</html>
